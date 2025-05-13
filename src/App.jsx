@@ -51,7 +51,7 @@ function App() {
     if (!userValues.length) return;
 
     let isCorrect = true;
-    
+
     for (let row = 0; row < 9; row++) {
       for (let col = 0; col < 9; col++) {
         if (value[row][col] === null) { 
@@ -88,7 +88,7 @@ function App() {
                             type="number"
                             min="1"
                             max="9"
-                            className="w-8 text-center"
+                            className="w-8 text-center outline-none"
                             value={userValues[rowIndex]?.[cellIndex] || ''}
                             onChange={(e) => handleInputChange(rowIndex, cellIndex, e.target.value)}
                           />
